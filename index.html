@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogimax - La Aplicación Definitiva para el Cuidado de tu Perro</title>
+    <meta name="description" content="Dogimax es la aplicación premium que necesitas para cuidar a tu perro. Agenda citas veterinarias, horarios de comida y accede a nuestro asistente IA para resolver todas tus dudas sobre el cuidado de tu mascota.">
+    <meta name="keywords" content="cuidado perros, aplicación mascotas, veterinario, agenda citas, horario comida perros, IA mascotas">
+    <meta name="author" content="Dogimax">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Dogimax - La Aplicación Definitiva para el Cuidado de tu Perro">
+    <meta property="og:description" content="Agenda citas veterinarias, horarios de comida y accede a nuestro asistente IA para el cuidado perfecto de tu mascota.">
+    <meta property="og:image" content="./assets/img/dogimax-og-image.jpg">
+    <meta property="og:url" content="https://dogimax.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Dogimax">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dogimax - La Aplicación Definitiva para el Cuidado de tu Perro">
+    <meta name="twitter:description" content="Agenda citas veterinarias, horarios de comida y accede a nuestro asistente IA para el cuidado perfecto de tu mascota.">
+    <meta name="twitter:image" content="./assets/img/dogimax-twitter-card.jpg">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">    
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Dogimax",
+        "description": "Aplicación premium para el cuidado integral de perros con funciones de agenda veterinaria, horarios de comida y asistente IA.",
+        "url": "https://dogimax.com",
+        "applicationCategory": "LifestyleApplication",
+        "operatingSystem": "Web, iOS, Android",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "1250"
+        }
+    }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="./index.html" class="logo__link" aria-label="Ir al inicio"><span class="logo__text">Dogimax</span></a>
+                </div>
+                
+                <nav class="main-nav" aria-label="Navegación principal">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#benefits" class="nav__link">Beneficios</a></li>
+                        <li class="nav__item"><a href="#features" class="nav__link">Características</a></li>
+                        <li class="nav__item"><a href="#testimonials" class="nav__link">Testimonios</a></li>
+                        <li class="nav__item"><a href="./about-us.html" class="nav__link">Nosotros</a></li>
+                        <li class="nav__item"><a href="./faq.html" class="nav__link">FAQ</a></li>
+                    </ul>
+                    <a href="#signup" class="cta-primary nav__cta">Comenzar Gratis</a>
+                </nav>
+                
+                <button class="mobile-menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__text">
+                        <h1 class="hero__title">
+                            La App Que Tu Perro <span class="text-highlight">Necesitaba</span>
+                        </h1>
+                        <p class="hero__subtitle">
+                            Dogimax es la aplicación premium que revoluciona el cuidado de tu mascota. 
+                            Agenda citas veterinarias, controla horarios de comida y accede a nuestro 
+                            asistente IA personalizado para resolver todas tus dudas.
+                        </p>
+                        <div class="hero__cta">
+                            <a href="#signup" class="cta-button cta-button--primary">
+                                Empezar Gratis Ahora
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="hero__image">
+                        <img src="./assets/img/hero-dog-app.jpg" alt="Perro feliz usando la aplicación Dogimax" loading="eager">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits-section" id="benefits">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">¿Por Qué Miles de Dog Lovers Eligen Dogimax?</h2>
+                    <p class="section-subtitle">
+                        Descubre todos los beneficios que harán la diferencia en la vida de tu mascota
+                    </p>
+                </div>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                                    <i class="fa-solid fa-stethoscope" aria-hidden="true"></i>
+                                    <span class="sr-only">Salud</span>
+                        </div>
+                        <h3 class="benefit-card__title">Salud Bajo Control</h3>
+                        <p class="benefit-card__description">
+                            Nunca más olvides una cita veterinaria. Recibe recordatorios inteligentes 
+                            y mantén el historial médico completo de tu perro.
+                        </p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                                    <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+                                    <span class="sr-only">Horarios</span>
+                        </div>
+                        <h3 class="benefit-card__title">Horarios Perfectos</h3>
+                        <p class="benefit-card__description">
+                            Establece rutinas de alimentación personalizadas y recibe notificaciones 
+                            para mantener a tu perro feliz y saludable.
+                        </p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                                    <i class="fa-solid fa-robot" aria-hidden="true"></i>
+                                    <span class="sr-only">Asistente IA</span>
+                        </div>
+                        <h3 class="benefit-card__title">Asistente IA Personal</h3>
+                        <p class="benefit-card__description">
+                            Accede a nuestro experto virtual que conoce a tu perro y responde 
+                            todas tus preguntas las 24 horas del día.
+                        </p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                                    <i class="fa-solid fa-users" aria-hidden="true"></i>
+                                    <span class="sr-only">Comunidad</span>
+                        </div>
+                        <h3 class="benefit-card__title">Comunidad Activa</h3>
+                        <p class="benefit-card__description">
+                            Conecta con otros amantes de los perros, comparte experiencias 
+                            y obtén consejos de expertos veterinarios.
+                        </p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                                    <i class="fa-solid fa-syringe" aria-hidden="true"></i>
+                                    <span class="sr-only">Registro de Vacunas</span>
+                        </div>
+                        <h3 class="benefit-card__title">Registro de Vacunas</h3>
+                        <p class="benefit-card__description">
+                            Lleva un control claro y accesible del esquema de vacunación de tu mascota,
+                            con alertas y certificados digitales para consultas y viajes.
+                        </p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                                    <i class="fa-solid fa-pills" aria-hidden="true"></i>
+                                    <span class="sr-only">Recordatorios de Medicación</span>
+                        </div>
+                        <h3 class="benefit-card__title">Recordatorios de Medicación</h3>
+                        <p class="benefit-card__description">
+                            Programa dosis y horarios, recibe notificaciones y evita olvidos en tratamientos
+                            críticos para la salud de tu perro.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="section-cta">
+                    <a href="#signup" class="cta-button cta-button--secondary">
+                        Únete a la Comunidad
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Características Que Marcan la Diferencia</h2>
+                    <p class="section-subtitle">
+                        Tecnología avanzada diseñada específicamente para el cuidado canino
+                    </p>
+                </div>
+                
+                <div class="features-list">
+                    <div class="feature-item">
+                        <div class="feature-item__content">
+                            <h3 class="feature-item__title">Agenda Veterinaria Inteligente</h3>
+                            <p class="feature-item__description">
+                                Sistema avanzado de recordatorios que se sincroniza con tu calendario 
+                                y el de tu veterinario. Incluye historial médico completo, vacunas, 
+                                medicamentos y seguimiento de tratamientos.
+                            </p>
+                            <ul class="feature-item__list">
+                                <li>Recordatorios automáticos de citas</li>
+                                <li>Historial médico digitalizado</li>
+                                <li>Conexión directa con veterinarios</li>
+                                <li>Seguimiento de tratamientos</li>
+                            </ul>
+                        </div>
+                        <div class="feature-item__image">
+                            <img src="./assets/img/feature-calendar.png" alt="Calendario veterinario en la app Dogimax" loading="lazy">
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item feature-item--reverse">
+                        <div class="feature-item__content">
+                            <h3 class="feature-item__title">Asistente IA Personalizado</h3>
+                            <p class="feature-item__description">
+                                Nuestro asistente de inteligencia artificial aprende sobre tu perro 
+                                y proporciona consejos personalizados basados en raza, edad, 
+                                historial médico y comportamiento.
+                            </p>
+                            <ul class="feature-item__list">
+                                <li>Respuestas 24/7 sobre tu mascota</li>
+                                <li>Consejos personalizados por raza</li>
+                                <li>Alertas de salud preventivas</li>
+                                <li>Recomendaciones de cuidado</li>
+                            </ul>
+                        </div>
+                        <div class="feature-item__image">
+                            <img src="./assets/img/feature-ai-chat.png" alt="Chat con asistente IA en Dogimax" loading="lazy">
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+                <div class="section-cta">
+                    <a href="#signup" class="cta-button cta-button--primary">
+                        Explorar Todas las Características
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof Section -->
+        <section class="social-proof-section" id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Confiado por Miles de Dog Lovers</h2>
+                    <p class="section-subtitle">
+                        Descubre por qué somos la aplicación #1 para el cuidado canino
+                    </p>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-card__text">
+                            "Dogimax cambió completamente cómo cuido a Max. El asistente IA me ayudó 
+                            cuando estaba preocupada por su comportamiento y resultó ser solo una 
+                            fase normal. ¡Increíble!"
+                        </p>
+                        <div class="testimonial-card__author">
+                            <img src="./assets/img/testimonial-1.jpg" alt="María González" class="author__image" loading="lazy">
+                            <div class="author__info">
+                                <h4 class="author__name">María González</h4>
+                                <p class="author__location">Madrid, España</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-card__text">
+                            "Como veterinario, recomiendo Dogimax a todos mis clientes. La 
+                            información que llegan con a la consulta es mucho más detallada 
+                            y útil para el diagnóstico."
+                        </p>
+                        <div class="testimonial-card__author">
+                            <img src="./assets/img/testimonial-2.jpg" alt="Dr. Carlos Ruiz" class="author__image" loading="lazy">
+                            <div class="author__info">
+                                <h4 class="author__name">Dr. Carlos Ruiz</h4>
+                                <p class="author__location">Veterinario, Barcelona</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-card__text">
+                            "Los recordatorios de comida han sido un salvavidas. Luna ahora 
+                            tiene una rutina perfecta y su digestión ha mejorado muchísimo. 
+                            La versión premium vale cada euro."
+                        </p>
+                        <div class="testimonial-card__author">
+                            <img src="./assets/img/testimonial-3.jpg" alt="Ana Martín" class="author__image" loading="lazy">
+                            <div class="author__info">
+                                <h4 class="author__name">Ana Martín</h4>
+                                <p class="author__location">Valencia, España</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3 class="stat-item__number">50K+</h3>
+                        <p class="stat-item__label">Perros Felices</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-item__number">98%</h3>
+                        <p class="stat-item__label">Satisfacción</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-item__number">4.9★</h3>
+                        <p class="stat-item__label">Valoración</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-item__number">24/7</h3>
+                        <p class="stat-item__label">Soporte IA</p>
+                    </div>
+                </div>
+                
+                <div class="section-cta">
+                    <a href="#signup" class="cta-button cta-button--secondary">
+                        Únete a Nuestra Comunidad
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section footer__section--brand">
+                    <div class="footer__logo">
+                            <a href="./index.html" class="logo__link" aria-label="Ir al inicio"><span class="logo__text">Dogimax</span></a>
+                        </div>
+                    <p class="footer__description">
+                        La aplicación premium que revoluciona el cuidado de tu perro con 
+                        tecnología de inteligencia artificial y las mejores herramientas 
+                        de gestión.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Producto</h3>
+                    <ul class="footer__links">
+                        <li><a href="#features" class="footer__link">Características</a></li>
+                        <li><a href="#" class="footer__link">Precios</a></li>
+                        <li><a href="#" class="footer__link">Premium</a></li>
+                        <li><a href="#" class="footer__link">App Móvil</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Empresa</h3>
+                    <ul class="footer__links">
+                        <li><a href="./about-us.html" class="footer__link">Sobre Nosotros</a></li>
+                        <li><a href="#" class="footer__link">Blog</a></li>
+                        <li><a href="#" class="footer__link">Carrera</a></li>
+                        <li><a href="#" class="footer__link">Prensa</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Soporte</h3>
+                    <ul class="footer__links">
+                        <li><a href="./faq.html" class="footer__link">FAQ</a></li>
+                        <li><a href="#" class="footer__link">Contacto</a></li>
+                        <li><a href="#" class="footer__link">Centro de Ayuda</a></li>
+                        <li><a href="#" class="footer__link">Comunidad</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Legal</h3>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Privacidad</a></li>
+                        <li><a href="#" class="footer__link">Términos</a></li>
+                        <li><a href="#" class="footer__link">Cookies</a></li>
+                        <li><a href="#" class="footer__link">GDPR</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2025 Dogimax. Todos los derechos reservados. Hecho con ❤️ para dog lovers.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

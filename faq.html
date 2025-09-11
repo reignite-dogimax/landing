@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes - Dogimax</title>
+    <meta name="description" content="Encuentra respuestas a las preguntas más frecuentes sobre Dogimax, la aplicación premium para el cuidado de tu perro.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="./index.html" class="logo__link" aria-label="Ir al inicio"><span class="logo__text">Dogimax</span></a>
+                </div>
+                
+                <nav class="main-nav" aria-label="Navegación principal">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="./index.html#benefits" class="nav__link">Beneficios</a></li>
+                        <li class="nav__item"><a href="./index.html#features" class="nav__link">Características</a></li>
+                        <li class="nav__item"><a href="./index.html#testimonials" class="nav__link">Testimonios</a></li>
+                        <li class="nav__item"><a href="./about-us.html" class="nav__link">Nosotros</a></li>
+                        <li class="nav__item"><a href="./faq.html" class="nav__link nav__link--active">FAQ</a></li>
+                    </ul>
+                    <a href="./index.html#signup" class="cta-primary nav__cta">Comenzar Gratis</a>
+                </nav>
+                
+                <button class="mobile-menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero__content">
+                    <h1 class="page-hero__title">Preguntas Frecuentes</h1>
+                    <p class="page-hero__subtitle">
+                        Encuentra respuestas rápidas a las preguntas más comunes sobre Dogimax 
+                        y descubre cómo aprovechar al máximo nuestra aplicación.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="faq-categories">
+                    <button class="faq-category faq-category--active" data-category="general">General</button>
+                    <button class="faq-category" data-category="features">Características</button>
+                    <button class="faq-category" data-category="premium">Premium</button>
+                    <button class="faq-category" data-category="technical">Técnico</button>
+                </div>
+
+                <div class="faq-content">
+                    <!-- General FAQ -->
+                    <div class="faq-group" data-category="general">
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>¿Qué es Dogimax y cómo puede ayudar a mi perro?</span>
+                                <span class="faq-icon"><i class="fa-solid fa-plus" aria-hidden="true"></i><span class="sr-only">Expandir pregunta</span></span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>
+                                    Dogimax es una aplicación premium diseñada para revolucionar el cuidado de tu perro. 
+                                    Te ayuda a agendar citas veterinarias, controlar horarios de alimentación, y acceder 
+                                    a un asistente de inteligencia artificial que responde todas tus dudas sobre el 
+                                    cuidado de tu mascota las 24 horas del día.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>¿Es Dogimax realmente gratis?</span>
+                                <span class="faq-icon"><i class="fa-solid fa-plus" aria-hidden="true"></i><span class="sr-only">Expandir pregunta</span></span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>
+                                    Sí, Dogimax tiene una versión gratuita que incluye funciones básicas como recordatorios 
+                                    de comida y agenda de citas. La versión Premium desbloquea características avanzadas 
+                                    como el asistente IA personalizado, análisis de salud detallados y acceso prioritario 
+                                    al soporte.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>¿Funciona Dogimax con cualquier raza de perro?</span>
+                                <span class="faq-icon"><i class="fa-solid fa-plus" aria-hidden="true"></i><span class="sr-only">Expandir pregunta</span></span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>
+                                    ¡Absolutamente! Dogimax está diseñado para funcionar con todas las razas de perros, 
+                                    desde Chihuahuas hasta Gran Daneses. Nuestro asistente IA se adapta a las necesidades 
+                                    específicas de cada raza, edad y tamaño para ofrecer recomendaciones personalizadas.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>¿Necesito conocimientos técnicos para usar la app?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>
+                                    Para nada. Dogimax está diseñado para ser extremadamente fácil de usar. Si puedes 
+                                    enviar un mensaje de texto, puedes usar Dogimax. Nuestro proceso de configuración 
+                                    inicial toma menos de 2 minutos y te guiamos paso a paso.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Features FAQ -->
+                    <div class="faq-group" data-category="features" style="display: none;">
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>¿Cómo funciona el asistente de inteligencia artificial?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>
+                                    Nuestro asistente IA aprende sobre tu perro a través de la información que proporcionas 
+                                    en el perfil de tu mascota. Utiliza datos sobre raza, edad, peso, historial médico y 
+                                    comportamiento para ofrecer consejos personalizados. Puede responder preguntas sobre 
+                                    alimentación, comportamiento, salud y cuidados generales.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>¿Puedo conectar la app con mi veterinario?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>
+                                    Sí, Dogimax te permite compartir el historial médico y los datos de salud de tu perro 
+                                    directamente con tu veterinario. Esto mejora significativamente la calidad de las 
+                                    consultas y ayuda al profesional a tomar mejores decisiones sobre el cuidado de tu mascota.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>¿Qué tipo de recordatorios puedo configurar?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>
+                                    Puedes configurar recordatorios para comidas, medicamentos, citas veterinarias, 
+                                    vacunas, desparasitaciones, ejercicio, aseo y cualquier actividad personalizada 
+                                    que sea importante para tu perro. Los recordatorios se pueden repetir diariamente, 
+                                    semanalmente o según tu programación específica.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Premium FAQ -->
+                    <div class="faq-group" data-category="premium" style="display: none;">
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>¿Qué incluye la versión Premium?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>
+                                    La versión Premium incluye: acceso completo al asistente IA, análisis avanzados de 
+                                    salud, recomendaciones nutricionales personalizadas, seguimiento detallado de actividad, 
+                                    soporte prioritario 24/7, sincronización con múltiples dispositivos y acceso a 
+                                    contenido exclusivo de expertos veterinarios.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>¿Cuánto cuesta la versión Premium?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>
+                                    Ofrecemos planes flexibles: €4.99/mes, €39.99/año (ahorra 33%), o €99.99 para acceso 
+                                    de por vida. Todos los planes Premium incluyen una garantía de satisfacción de 30 días. 
+                                    Puedes cancelar en cualquier momento sin preguntas.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>¿Puedo probar Premium gratis?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>
+                                    ¡Por supuesto! Ofrecemos una prueba gratuita de 14 días de Dogimax Premium sin 
+                                    compromiso. No necesitas tarjeta de crédito para comenzar la prueba, y puedes 
+                                    cancelar en cualquier momento durante el período de prueba.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical FAQ -->
+                    <div class="faq-group" data-category="technical" style="display: none;">
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>¿En qué dispositivos funciona Dogimax?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>
+                                    Dogimax está disponible como aplicación web que funciona en cualquier navegador 
+                                    moderno (Chrome, Safari, Firefox, Edge) en computadoras, tablets y móviles. 
+                                    También estamos desarrollando aplicaciones nativas para iOS y Android que 
+                                    estarán disponibles próximamente.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>¿Mis datos están seguros?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>
+                                    La seguridad de tus datos es nuestra prioridad absoluta. Utilizamos encriptación 
+                                    de grado militar, cumplimos con GDPR, realizamos auditorías de seguridad regulares 
+                                    y nunca vendemos tu información personal. Todos los datos se almacenan en servidores 
+                                    seguros en Europa.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span>¿Funciona sin conexión a internet?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>
+                                    Algunas funciones básicas como ver recordatorios y datos guardados funcionan sin 
+                                    conexión. Sin embargo, para acceder al asistente IA, sincronizar datos y recibir 
+                                    actualizaciones en tiempo real, necesitas conexión a internet. Los datos se 
+                                    sincronizan automáticamente cuando recuperas la conexión.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact CTA Section -->
+        <section class="contact-cta-section">
+            <div class="container">
+                <div class="contact-cta__content">
+                    <h2 class="contact-cta__title">¿No encontraste tu respuesta?</h2>
+                    <p class="contact-cta__subtitle">
+                        Nuestro equipo de soporte está aquí para ayudarte. Contáctanos y te 
+                        responderemos en menos de 24 horas.
+                    </p>
+                    <div class="contact-cta__buttons">
+                        <a href="#" class="cta-button cta-button--primary">Contactar Soporte</a>
+                        <a href="./index.html#signup" class="cta-button cta-button--secondary">Probar Dogimax</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section footer__section--brand">
+                    <div class="footer__logo">
+                        <a href="./index.html" class="logo__link" aria-label="Ir al inicio"><span class="logo__text">Dogimax</span></a>
+                    </div>
+                    <p class="footer__description">
+                        La aplicación premium que revoluciona el cuidado de tu perro con 
+                        tecnología de inteligencia artificial y las mejores herramientas 
+                        de gestión.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Producto</h3>
+                    <ul class="footer__links">
+                        <li><a href="./index.html#features" class="footer__link">Características</a></li>
+                        <li><a href="#" class="footer__link">Precios</a></li>
+                        <li><a href="#" class="footer__link">Premium</a></li>
+                        <li><a href="#" class="footer__link">App Móvil</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Empresa</h3>
+                    <ul class="footer__links">
+                        <li><a href="./about-us.html" class="footer__link">Sobre Nosotros</a></li>
+                        <li><a href="#" class="footer__link">Blog</a></li>
+                        <li><a href="#" class="footer__link">Carrera</a></li>
+                        <li><a href="#" class="footer__link">Prensa</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Soporte</h3>
+                    <ul class="footer__links">
+                        <li><a href="./faq.html" class="footer__link">FAQ</a></li>
+                        <li><a href="#" class="footer__link">Contacto</a></li>
+                        <li><a href="#" class="footer__link">Centro de Ayuda</a></li>
+                        <li><a href="#" class="footer__link">Comunidad</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Legal</h3>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Privacidad</a></li>
+                        <li><a href="#" class="footer__link">Términos</a></li>
+                        <li><a href="#" class="footer__link">Cookies</a></li>
+                        <li><a href="#" class="footer__link">GDPR</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2025 Dogimax. Todos los derechos reservados. Hecho con ❤️ para dog lovers.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
