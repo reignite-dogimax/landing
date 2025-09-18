@@ -363,6 +363,98 @@ p {
     transition: width var(--transition-normal);
 }
 
+/* ===== LANGUAGE SWITCHER - Diseño idéntico al mockup ===== */
+.lang-switcher {
+    position: relative;
+    display: inline-block;
+    margin-left: var(--spacing-md);
+}
+
+.lang-switcher__toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    margin: 0;
+    z-index: 10;
+}
+
+.lang-switcher__slider {
+    position: relative;
+    width: 72px;
+    height: 28px;
+    background-color: #e8eaed;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.lang-switcher__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    z-index: 2;
+    pointer-events: none;
+    transition: color 0.2s ease;
+    color: #6b7280; /* default grey */
+}
+
+.lang-switcher__label--es {
+    left: 0;
+}
+
+.lang-switcher__label--en {
+    left: 50%;
+    color: #ffffff;
+}
+
+/* Knob naranja que se desliza */
+.lang-switcher__slider::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 6px; /* aumentado para centrar sobre EN */
+    width: 24px;
+    height: 24px;
+    background-color: #FF6B1A;
+    border-radius: 12px;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+/* Estado checked: knob se mueve a la izquierda, ES se vuelve blanco */
+.lang-switcher__toggle:checked + .lang-switcher__slider::before {
+    transform: translateX(-36px); /* ajustado para alineación con EN */
+}
+
+.lang-switcher__toggle:checked + .lang-switcher__slider .lang-switcher__label--es {
+    color: #ffffff;
+}
+
+.lang-switcher__toggle:checked + .lang-switcher__slider .lang-switcher__label--en {
+    color: #6b7280;
+}
+
+/* Focus para accesibilidad */
+.lang-switcher__toggle:focus + .lang-switcher__slider {
+    outline: 2px solid #FF6B1A;
+    outline-offset: 2px;
+}
+
 .nav__link:hover::after,
 .nav__link--active::after {
     width: 100%;
@@ -1296,6 +1388,11 @@ p {
         max-width: none;
         text-align: center;
     }
+
+    .lang-switcher {
+        margin-left: auto;
+        margin-right: var(--spacing-md);
+    }
 }
 
 /* Small screens */
@@ -1333,6 +1430,11 @@ p {
         width: 100%;
         text-align: center;
         gap: var(--spacing-md);
+    }
+
+    .main-nav .lang-switcher {
+        margin: var(--spacing-md) 0 0;
+        justify-content: center;
     }
 
     .nav__cta {

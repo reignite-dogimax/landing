@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preguntas Frecuentes - Dogimax</title>
-    <meta name="description" content="Encuentra respuestas a las preguntas más frecuentes sobre Dogimax, la aplicación premium para el cuidado de tu perro.">
+    <title>Frequently Asked Questions - Dogimax</title>
+    <meta name="description" content="Find answers to the most frequently asked questions about Dogimax, the premium app for your dog's care.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,21 +23,30 @@
         <div class="container">
             <div class="header__content">
                 <div class="header__logo">
-                    <a href="./index.html" class="logo__link" aria-label="Ir al inicio"><span class="logo__text">Dogimax</span></a>
+                    <a href="./index.html" class="logo__link" aria-label="Go to homepage"><span class="logo__text">Dogimax</span></a>
                 </div>
                 
-                <nav class="main-nav" aria-label="Navegación principal">
+                <nav class="main-nav" aria-label="Main navigation">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="./index.html#benefits" class="nav__link">Beneficios</a></li>
-                        <li class="nav__item"><a href="./index.html#features" class="nav__link">Características</a></li>
-                        <li class="nav__item"><a href="./index.html#testimonials" class="nav__link">Testimonios</a></li>
-                        <li class="nav__item"><a href="./about-us.html" class="nav__link">Nosotros</a></li>
-                        <li class="nav__item"><a href="./faq.html" class="nav__link nav__link--active">FAQ</a></li>
+                        <li class="nav__item"><a href="./index.html#benefits" class="nav__link" data-i18n="nav.benefits">Benefits</a></li>
+                        <li class="nav__item"><a href="./index.html#features" class="nav__link" data-i18n="nav.features">Features</a></li>
+                        <li class="nav__item"><a href="./index.html#testimonials" class="nav__link" data-i18n="nav.testimonials">Testimonials</a></li>
+                        <li class="nav__item"><a href="./about-us.html" class="nav__link" data-i18n="nav.about">About Us</a></li>
+                        <li class="nav__item"><a href="./faq.html" class="nav__link nav__link--active" data-i18n="nav.faq">FAQ</a></li>
                     </ul>
-                    <a href="./index.html#signup" class="cta-primary nav__cta">Comenzar Gratis</a>
+                    <a href="./index.html#signup" class="cta-primary nav__cta" data-i18n="nav.cta">Start for Free</a>
+                </nav>
+
+                <div class="lang-switcher">
+                    <label for="lang-toggle" class="sr-only">Language Switcher</label>
+                    <input type="checkbox" id="lang-toggle" class="lang-switcher__toggle">
+                    <div class="lang-switcher__slider">
+                        <span class="lang-switcher__label lang-switcher__label--en">EN</span>
+                        <span class="lang-switcher__label lang-switcher__label--es">ES</span>
+                    </div>
                 </nav>
                 
-                <button class="mobile-menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+                <button class="mobile-menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
@@ -51,10 +60,9 @@
         <section class="page-hero">
             <div class="container">
                 <div class="page-hero__content">
-                    <h1 class="page-hero__title">Preguntas Frecuentes</h1>
-                    <p class="page-hero__subtitle">
-                        Encuentra respuestas rápidas a las preguntas más comunes sobre Dogimax 
-                        y descubre cómo aprovechar al máximo nuestra aplicación.
+                    <h1 class="page-hero__title" data-i18n="faq.hero.title">Frequently Asked Questions</h1>
+                    <p class="page-hero__subtitle" data-i18n="faq.hero.subtitle">
+                        Find quick answers to the most common questions about Dogimax and discover how to get the most out of our application.
                     </p>
                 </div>
             </div>
@@ -64,10 +72,10 @@
         <section class="faq-section">
             <div class="container">
                 <div class="faq-categories">
-                    <button class="faq-category faq-category--active" data-category="general">General</button>
-                    <button class="faq-category" data-category="features">Características</button>
-                    <button class="faq-category" data-category="premium">Premium</button>
-                    <button class="faq-category" data-category="technical">Técnico</button>
+                    <button class="faq-category faq-category--active" data-category="general" data-i18n="faq.category.general">General</button>
+                    <button class="faq-category" data-category="features" data-i18n="faq.category.features">Features</button>
+                    <button class="faq-category" data-category="premium" data-i18n="faq.category.premium">Premium</button>
+                    <button class="faq-category" data-category="technical" data-i18n="faq.category.technical">Technical</button>
                 </div>
 
                 <div class="faq-content">
@@ -75,58 +83,56 @@
                     <div class="faq-group" data-category="general">
                         <div class="faq-item">
                             <button class="faq-question" aria-expanded="false">
-                                <span>¿Qué es Dogimax y cómo puede ayudar a mi perro?</span>
-                                <span class="faq-icon"><i class="fa-solid fa-plus" aria-hidden="true"></i><span class="sr-only">Expandir pregunta</span></span>
+                                <span data-i18n="faq.general.q1">What is Dogimax and how can it help my dog?</span>
+                                <span class="faq-icon"><i class="fa-solid fa-plus" aria-hidden="true"></i><span class="sr-only">Expand question</span></span>
                             </button>
-                            <div class="faq-answer">
+                            <div class="faq-answer" data-i18n="faq.general.a1">
                                 <p>
-                                    Dogimax es una aplicación premium diseñada para revolucionar el cuidado de tu perro. 
-                                    Te ayuda a agendar citas veterinarias, controlar horarios de alimentación, y acceder 
-                                    a un asistente de inteligencia artificial que responde todas tus dudas sobre el 
-                                    cuidado de tu mascota las 24 horas del día.
+                                    Dogimax is a premium application designed to revolutionize your dog's care.
+                                    It helps you schedule vet appointments, manage feeding times, and access
+                                    an artificial intelligence assistant that answers all your pet care questions 24 hours a day.
                                 </p>
                             </div>
                         </div>
 
                         <div class="faq-item">
                             <button class="faq-question" aria-expanded="false">
-                                <span>¿Es Dogimax realmente gratis?</span>
-                                <span class="faq-icon"><i class="fa-solid fa-plus" aria-hidden="true"></i><span class="sr-only">Expandir pregunta</span></span>
+                                <span data-i18n="faq.general.q2">Is Dogimax really free?</span>
+                                <span class="faq-icon"><i class="fa-solid fa-plus" aria-hidden="true"></i><span class="sr-only">Expand question</span></span>
                             </button>
-                            <div class="faq-answer">
+                            <div class="faq-answer" data-i18n="faq.general.a2">
                                 <p>
-                                    Sí, Dogimax tiene una versión gratuita que incluye funciones básicas como recordatorios 
-                                    de comida y agenda de citas. La versión Premium desbloquea características avanzadas 
-                                    como el asistente IA personalizado, análisis de salud detallados y acceso prioritario 
-                                    al soporte.
+                                    Yes, Dogimax has a free version that includes basic features like meal reminders
+                                    and appointment scheduling. The Premium version unlocks advanced features
+                                    like the personalized AI assistant, detailed health analytics, and priority support access.
                                 </p>
                             </div>
                         </div>
 
                         <div class="faq-item">
                             <button class="faq-question" aria-expanded="false">
-                                <span>¿Funciona Dogimax con cualquier raza de perro?</span>
-                                <span class="faq-icon"><i class="fa-solid fa-plus" aria-hidden="true"></i><span class="sr-only">Expandir pregunta</span></span>
+                                <span data-i18n="faq.general.q3">Does Dogimax work with any dog breed?</span>
+                                <span class="faq-icon"><i class="fa-solid fa-plus" aria-hidden="true"></i><span class="sr-only">Expand question</span></span>
                             </button>
-                            <div class="faq-answer">
+                            <div class="faq-answer" data-i18n="faq.general.a3">
                                 <p>
-                                    ¡Absolutamente! Dogimax está diseñado para funcionar con todas las razas de perros, 
-                                    desde Chihuahuas hasta Gran Daneses. Nuestro asistente IA se adapta a las necesidades 
-                                    específicas de cada raza, edad y tamaño para ofrecer recomendaciones personalizadas.
+                                    Absolutely! Dogimax is designed to work with all dog breeds,
+                                    from Chihuahuas to Great Danes. Our AI assistant adapts to the
+                                    specific needs of each breed, age, and size to offer personalized recommendations.
                                 </p>
                             </div>
                         </div>
 
                         <div class="faq-item">
                             <button class="faq-question" aria-expanded="false">
-                                <span>¿Necesito conocimientos técnicos para usar la app?</span>
+                                <span data-i18n="faq.general.q4">Do I need technical skills to use the app?</span>
                                 <span class="faq-icon">+</span>
                             </button>
-                            <div class="faq-answer">
+                            <div class="faq-answer" data-i18n="faq.general.a4">
                                 <p>
-                                    Para nada. Dogimax está diseñado para ser extremadamente fácil de usar. Si puedes 
-                                    enviar un mensaje de texto, puedes usar Dogimax. Nuestro proceso de configuración 
-                                    inicial toma menos de 2 minutos y te guiamos paso a paso.
+                                    Not at all. Dogimax is designed to be extremely easy to use. If you can
+                                    send a text message, you can use Dogimax. Our initial setup process
+                                    takes less than 2 minutes, and we guide you step by step.
                                 </p>
                             </div>
                         </div>
@@ -136,44 +142,44 @@
                     <div class="faq-group" data-category="features" style="display: none;">
                         <div class="faq-item">
                             <button class="faq-question" aria-expanded="false">
-                                <span>¿Cómo funciona el asistente de inteligencia artificial?</span>
+                                <span data-i18n="faq.features.q1">How does the artificial intelligence assistant work?</span>
                                 <span class="faq-icon">+</span>
                             </button>
-                            <div class="faq-answer">
+                            <div class="faq-answer" data-i18n="faq.features.a1">
                                 <p>
-                                    Nuestro asistente IA aprende sobre tu perro a través de la información que proporcionas 
-                                    en el perfil de tu mascota. Utiliza datos sobre raza, edad, peso, historial médico y 
-                                    comportamiento para ofrecer consejos personalizados. Puede responder preguntas sobre 
-                                    alimentación, comportamiento, salud y cuidados generales.
+                                    Our AI assistant learns about your dog through the information you provide
+                                    in your pet's profile. It uses data on breed, age, weight, medical history, and
+                                    behavior to offer personalized advice. It can answer questions about
+                                    feeding, behavior, health, and general care.
                                 </p>
                             </div>
                         </div>
 
                         <div class="faq-item">
                             <button class="faq-question" aria-expanded="false">
-                                <span>¿Puedo conectar la app con mi veterinario?</span>
+                                <span data-i18n="faq.features.q2">Can I connect the app with my veterinarian?</span>
                                 <span class="faq-icon">+</span>
                             </button>
-                            <div class="faq-answer">
+                            <div class="faq-answer" data-i18n="faq.features.a2">
                                 <p>
-                                    Sí, Dogimax te permite compartir el historial médico y los datos de salud de tu perro 
-                                    directamente con tu veterinario. Esto mejora significativamente la calidad de las 
-                                    consultas y ayuda al profesional a tomar mejores decisiones sobre el cuidado de tu mascota.
+                                    Yes, Dogimax allows you to share your dog's medical history and health data
+                                    directly with your vet. This significantly improves the quality of
+                                    consultations and helps the professional make better decisions about your pet's care.
                                 </p>
                             </div>
                         </div>
 
                         <div class="faq-item">
                             <button class="faq-question" aria-expanded="false">
-                                <span>¿Qué tipo de recordatorios puedo configurar?</span>
+                                <span data-i18n="faq.features.q3">What kind of reminders can I set up?</span>
                                 <span class="faq-icon">+</span>
                             </button>
-                            <div class="faq-answer">
+                            <div class="faq-answer" data-i18n="faq.features.a3">
                                 <p>
-                                    Puedes configurar recordatorios para comidas, medicamentos, citas veterinarias, 
-                                    vacunas, desparasitaciones, ejercicio, aseo y cualquier actividad personalizada 
-                                    que sea importante para tu perro. Los recordatorios se pueden repetir diariamente, 
-                                    semanalmente o según tu programación específica.
+                                    You can set reminders for meals, medications, vet appointments,
+                                    vaccinations, deworming, exercise, grooming, and any custom activity
+                                    that is important for your dog. Reminders can be repeated daily,
+                                    weekly, or according to your specific schedule.
                                 </p>
                             </div>
                         </div>
@@ -183,43 +189,43 @@
                     <div class="faq-group" data-category="premium" style="display: none;">
                         <div class="faq-item">
                             <button class="faq-question" aria-expanded="false">
-                                <span>¿Qué incluye la versión Premium?</span>
+                                <span data-i18n="faq.premium.q1">What does the Premium version include?</span>
                                 <span class="faq-icon">+</span>
                             </button>
-                            <div class="faq-answer">
+                            <div class="faq-answer" data-i18n="faq.premium.a1">
                                 <p>
-                                    La versión Premium incluye: acceso completo al asistente IA, análisis avanzados de 
-                                    salud, recomendaciones nutricionales personalizadas, seguimiento detallado de actividad, 
-                                    soporte prioritario 24/7, sincronización con múltiples dispositivos y acceso a 
-                                    contenido exclusivo de expertos veterinarios.
+                                    The Premium version includes: full access to the AI assistant, advanced health
+                                    analytics, personalized nutritional recommendations, detailed activity tracking,
+                                    24/7 priority support, synchronization across multiple devices, and access to
+                                    exclusive content from veterinary experts.
                                 </p>
                             </div>
                         </div>
 
                         <div class="faq-item">
                             <button class="faq-question" aria-expanded="false">
-                                <span>¿Cuánto cuesta la versión Premium?</span>
+                                <span data-i18n="faq.premium.q2">How much does the Premium version cost?</span>
                                 <span class="faq-icon">+</span>
                             </button>
-                            <div class="faq-answer">
+                            <div class="faq-answer" data-i18n="faq.premium.a2">
                                 <p>
-                                    Ofrecemos planes flexibles: €4.99/mes, €39.99/año (ahorra 33%), o €99.99 para acceso 
-                                    de por vida. Todos los planes Premium incluyen una garantía de satisfacción de 30 días. 
-                                    Puedes cancelar en cualquier momento sin preguntas.
+                                    We offer flexible plans: $4.99/month, $39.99/year (save 33%), or $99.99 for lifetime
+                                    access. All Premium plans include a 30-day satisfaction guarantee.
+                                    You can cancel at any time, no questions asked.
                                 </p>
                             </div>
                         </div>
 
                         <div class="faq-item">
                             <button class="faq-question" aria-expanded="false">
-                                <span>¿Puedo probar Premium gratis?</span>
+                                <span data-i18n="faq.premium.q3">Can I try Premium for free?</span>
                                 <span class="faq-icon">+</span>
                             </button>
-                            <div class="faq-answer">
+                            <div class="faq-answer" data-i18n="faq.premium.a3">
                                 <p>
-                                    ¡Por supuesto! Ofrecemos una prueba gratuita de 14 días de Dogimax Premium sin 
-                                    compromiso. No necesitas tarjeta de crédito para comenzar la prueba, y puedes 
-                                    cancelar en cualquier momento durante el período de prueba.
+                                    Of course! We offer a 14-day free trial of Dogimax Premium with no
+                                    commitment. You don't need a credit card to start the trial, and you can
+                                    cancel at any time during the trial period.
                                 </p>
                             </div>
                         </div>
@@ -229,45 +235,42 @@
                     <div class="faq-group" data-category="technical" style="display: none;">
                         <div class="faq-item">
                             <button class="faq-question" aria-expanded="false">
-                                <span>¿En qué dispositivos funciona Dogimax?</span>
+                                <span data-i18n="faq.technical.q1">On which devices does Dogimax work?</span>
                                 <span class="faq-icon">+</span>
                             </button>
-                            <div class="faq-answer">
+                            <div class="faq-answer" data-i18n="faq.technical.a1">
                                 <p>
-                                    Dogimax está disponible como aplicación web que funciona en cualquier navegador 
-                                    moderno (Chrome, Safari, Firefox, Edge) en computadoras, tablets y móviles. 
-                                    También estamos desarrollando aplicaciones nativas para iOS y Android que 
-                                    estarán disponibles próximamente.
+                                    Dogimax is available as a web application that works on any modern browser
+                                    (Chrome, Safari, Firefox, Edge) on computers, tablets, and mobile devices.
+                                    We are also developing native apps for iOS and Android, which will be available soon.
                                 </p>
                             </div>
                         </div>
 
                         <div class="faq-item">
                             <button class="faq-question" aria-expanded="false">
-                                <span>¿Mis datos están seguros?</span>
+                                <span data-i18n="faq.technical.q2">Is my data secure?</span>
                                 <span class="faq-icon">+</span>
                             </button>
-                            <div class="faq-answer">
+                            <div class="faq-answer" data-i18n="faq.technical.a2">
                                 <p>
-                                    La seguridad de tus datos es nuestra prioridad absoluta. Utilizamos encriptación 
-                                    de grado militar, cumplimos con GDPR, realizamos auditorías de seguridad regulares 
-                                    y nunca vendemos tu información personal. Todos los datos se almacenan en servidores 
-                                    seguros en Europa.
+                                    The security of your data is our absolute priority. We use military-grade
+                                    encryption, comply with GDPR, conduct regular security audits,
+                                    and never sell your personal information. All data is stored on secure servers.
                                 </p>
                             </div>
                         </div>
 
                         <div class="faq-item">
                             <button class="faq-question" aria-expanded="false">
-                                <span>¿Funciona sin conexión a internet?</span>
+                                <span data-i18n="faq.technical.q3">Does it work without an internet connection?</span>
                                 <span class="faq-icon">+</span>
                             </button>
-                            <div class="faq-answer">
+                            <div class="faq-answer" data-i18n="faq.technical.a3">
                                 <p>
-                                    Algunas funciones básicas como ver recordatorios y datos guardados funcionan sin 
-                                    conexión. Sin embargo, para acceder al asistente IA, sincronizar datos y recibir 
-                                    actualizaciones en tiempo real, necesitas conexión a internet. Los datos se 
-                                    sincronizan automáticamente cuando recuperas la conexión.
+                                    Some basic functions like viewing reminders and saved data work offline.
+                                    However, to access the AI assistant, sync data, and receive real-time updates,
+                                    you need an internet connection. Data syncs automatically when you reconnect.
                                 </p>
                             </div>
                         </div>
@@ -280,14 +283,14 @@
         <section class="contact-cta-section">
             <div class="container">
                 <div class="contact-cta__content">
-                    <h2 class="contact-cta__title">¿No encontraste tu respuesta?</h2>
-                    <p class="contact-cta__subtitle">
-                        Nuestro equipo de soporte está aquí para ayudarte. Contáctanos y te 
-                        responderemos en menos de 24 horas.
+                    <h2 class="contact-cta__title" data-i18n="faq.cta.title">Didn't find your answer?</h2>
+                    <p class="contact-cta__subtitle" data-i18n="faq.cta.subtitle">
+                        Our support team is here to help. Contact us and we will
+                        get back to you in less than 24 hours.
                     </p>
                     <div class="contact-cta__buttons">
-                        <a href="#" class="cta-button cta-button--primary">Contactar Soporte</a>
-                        <a href="./index.html#signup" class="cta-button cta-button--secondary">Probar Dogimax</a>
+                        <a href="#" class="cta-button cta-button--primary" data-i18n="faq.cta.contact">Contact Support</a>
+                        <a href="./index.html#signup" class="cta-button cta-button--secondary" data-i18n="faq.cta.try">Try Dogimax</a>
                     </div>
                 </div>
             </div>
@@ -300,12 +303,11 @@
             <div class="footer__content">
                 <div class="footer__section footer__section--brand">
                     <div class="footer__logo">
-                        <a href="./index.html" class="logo__link" aria-label="Ir al inicio"><span class="logo__text">Dogimax</span></a>
+                        <a href="./index.html" class="logo__link" aria-label="Go to homepage"><span class="logo__text">Dogimax</span></a>
                     </div>
-                    <p class="footer__description">
-                        La aplicación premium que revoluciona el cuidado de tu perro con 
-                        tecnología de inteligencia artificial y las mejores herramientas 
-                        de gestión.
+                    <p class="footer__description" data-i18n="footer.description">
+                        The premium app that revolutionizes your dog's care with
+                        artificial intelligence technology and the best management tools.
                     </p>
                     <div class="footer__social">
                         <a href="#" class="social-link" aria-label="Facebook">
@@ -328,49 +330,49 @@
                 </div>
                 
                 <div class="footer__section">
-                    <h3 class="footer__title">Producto</h3>
+                    <h3 class="footer__title" data-i18n="footer.product.title">Product</h3>
                     <ul class="footer__links">
-                        <li><a href="./index.html#features" class="footer__link">Características</a></li>
-                        <li><a href="#" class="footer__link">Precios</a></li>
-                        <li><a href="#" class="footer__link">Premium</a></li>
-                        <li><a href="#" class="footer__link">App Móvil</a></li>
+                        <li><a href="./index.html#features" class="footer__link" data-i18n="footer.product.features">Features</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.product.pricing">Pricing</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.product.premium">Premium</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.product.mobile">Mobile App</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer__section">
-                    <h3 class="footer__title">Empresa</h3>
+                    <h3 class="footer__title" data-i18n="footer.company.title">Company</h3>
                     <ul class="footer__links">
-                        <li><a href="./about-us.html" class="footer__link">Sobre Nosotros</a></li>
-                        <li><a href="#" class="footer__link">Blog</a></li>
-                        <li><a href="#" class="footer__link">Carrera</a></li>
-                        <li><a href="#" class="footer__link">Prensa</a></li>
+                        <li><a href="./about-us.html" class="footer__link" data-i18n="footer.company.about">About Us</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.company.blog">Blog</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.company.careers">Careers</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.company.press">Press</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer__section">
-                    <h3 class="footer__title">Soporte</h3>
+                    <h3 class="footer__title" data-i18n="footer.support.title">Support</h3>
                     <ul class="footer__links">
-                        <li><a href="./faq.html" class="footer__link">FAQ</a></li>
-                        <li><a href="#" class="footer__link">Contacto</a></li>
-                        <li><a href="#" class="footer__link">Centro de Ayuda</a></li>
-                        <li><a href="#" class="footer__link">Comunidad</a></li>
+                        <li><a href="./faq.html" class="footer__link" data-i18n="footer.support.faq">FAQ</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.support.contact">Contact</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.support.help">Help Center</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.support.community">Community</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer__section">
-                    <h3 class="footer__title">Legal</h3>
+                    <h3 class="footer__title" data-i18n="footer.legal.title">Legal</h3>
                     <ul class="footer__links">
-                        <li><a href="#" class="footer__link">Privacidad</a></li>
-                        <li><a href="#" class="footer__link">Términos</a></li>
-                        <li><a href="#" class="footer__link">Cookies</a></li>
-                        <li><a href="#" class="footer__link">GDPR</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.legal.privacy">Privacy</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.legal.terms">Terms</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.legal.cookies">Cookies</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.legal.gdpr">GDPR</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer__bottom">
-                <p class="footer__copyright">
-                    © 2025 Dogimax. Todos los derechos reservados. Hecho con ❤️ para dog lovers.
+                <p class="footer__copyright" data-i18n="footer.copyright">
+                    © 2025 Dogimax. All rights reserved. Made with ❤️ for dog lovers.
                 </p>
             </div>
         </div>

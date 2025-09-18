@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nosotros - Dogimax</title>
-    <meta name="description" content="Conoce la historia detrás de Dogimax, la aplicación que revoluciona el cuidado canino con tecnología avanzada e inteligencia artificial.">
+    <title>About Us - Dogimax</title>
+    <meta name="description" content="Learn the story behind Dogimax, the app that is revolutionizing dog care with advanced technology and artificial intelligence.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,21 +23,30 @@
         <div class="container">
             <div class="header__content">
                 <div class="header__logo">
-                    <a href="./index.html" class="logo__link" aria-label="Ir al inicio"><span class="logo__text">Dogimax</span></a>
+                    <a href="./index.html" class="logo__link" aria-label="Go to homepage"><span class="logo__text">Dogimax</span></a>
                 </div>
                 
-                <nav class="main-nav" aria-label="Navegación principal">
+                <nav class="main-nav" aria-label="Main navigation">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="./index.html#benefits" class="nav__link">Beneficios</a></li>
-                        <li class="nav__item"><a href="./index.html#features" class="nav__link">Características</a></li>
-                        <li class="nav__item"><a href="./index.html#testimonials" class="nav__link">Testimonios</a></li>
-                        <li class="nav__item"><a href="./about-us.html" class="nav__link nav__link--active">Nosotros</a></li>
-                        <li class="nav__item"><a href="./faq.html" class="nav__link">FAQ</a></li>
+                        <li class="nav__item"><a href="./index.html#benefits" class="nav__link" data-i18n="nav.benefits">Benefits</a></li>
+                        <li class="nav__item"><a href="./index.html#features" class="nav__link" data-i18n="nav.features">Features</a></li>
+                        <li class="nav__item"><a href="./index.html#testimonials" class="nav__link" data-i18n="nav.testimonials">Testimonials</a></li>
+                        <li class="nav__item"><a href="./about-us.html" class="nav__link nav__link--active" data-i18n="nav.about">About Us</a></li>
+                        <li class="nav__item"><a href="./faq.html" class="nav__link" data-i18n="nav.faq">FAQ</a></li>
                     </ul>
-                    <a href="./index.html#signup" class="cta-primary nav__cta">Comenzar Gratis</a>
+                    <a href="./index.html#signup" class="cta-primary nav__cta" data-i18n="nav.cta">Start for Free</a>
+                </nav>
+
+                <div class="lang-switcher">
+                    <label for="lang-toggle" class="sr-only">Language Switcher</label>
+                    <input type="checkbox" id="lang-toggle" class="lang-switcher__toggle">
+                    <div class="lang-switcher__slider">
+                        <span class="lang-switcher__label lang-switcher__label--en">EN</span>
+                        <span class="lang-switcher__label lang-switcher__label--es">ES</span>
+                    </div>
                 </nav>
                 
-                <button class="mobile-menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+                <button class="mobile-menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
@@ -51,10 +60,9 @@
         <section class="page-hero">
             <div class="container">
                 <div class="page-hero__content">
-                    <h1 class="page-hero__title">Sobre Nosotros</h1>
-                    <p class="page-hero__subtitle">
-                        Conoce la pasión y dedicación detrás de Dogimax, la aplicación que está 
-                        revolucionando el cuidado canino en todo el mundo.
+                    <h1 class="page-hero__title" data-i18n="about.hero.title">About Us</h1>
+                    <p class="page-hero__subtitle" data-i18n="about.hero.subtitle">
+                        Discover the passion and dedication behind Dogimax, the app that is revolutionizing dog care worldwide.
                     </p>
                 </div>
             </div>
@@ -65,20 +73,16 @@
             <div class="container">
                 <div class="mission__content">
                     <div class="mission__text">
-                        <h2 class="section-title">Nuestra Misión</h2>
-                        <p class="section-subtitle">
-                            Creamos Dogimax con una misión clara: hacer que el cuidado de los perros 
-                            sea más fácil, inteligente y accesible para todos los amantes de las mascotas.
+                        <h2 class="section-title" data-i18n="about.mission.title">Our Mission</h2>
+                        <p class="section-subtitle" data-i18n="about.mission.subtitle">
+                            We created Dogimax with a clear mission: to make dog care easier, smarter, and more accessible for all pet lovers.
                         </p>
-                        <p>
-                            Nuestro equipo de desarrolladores, veterinarios y expertos en comportamiento 
-                            animal trabaja incansablemente para crear herramientas que fortalezcan el 
-                            vínculo entre las personas y sus perros, mientras garantizan el mejor 
-                            cuidado posible.
+                        <p data-i18n="about.mission.description">
+                            Our team of developers, veterinarians, and animal behavior experts works tirelessly to create tools that strengthen the bond between people and their dogs, while ensuring the best possible care.
                         </p>
                     </div>
                     <div class="mission__image">
-                        <img src="./assets/img/about-mission.jpg" alt="Equipo Dogimax trabajando" loading="lazy">
+                        <img src="./assets/img/about-mission.jpg" alt="Dogimax team working" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -87,41 +91,37 @@
         <!-- Values Section -->
         <section class="values-section">
             <div class="container">
-                <h2 class="section-title text-center">Nuestros Valores</h2>
+                <h2 class="section-title text-center" data-i18n="about.values.title">Our Values</h2>
                 <div class="values-grid">
                     <div class="value-card">
-                        <div class="value-card__icon"><i class="fa-solid fa-dog" aria-hidden="true"></i><span class="sr-only">Perro</span></div>
-                        <h3 class="value-card__title">Amor por los Perros</h3>
-                        <p class="value-card__description">
-                            Cada decisión que tomamos tiene en mente el bienestar y felicidad 
-                            de nuestros amigos de cuatro patas.
+                        <div class="value-card__icon"><i class="fa-solid fa-dog" aria-hidden="true"></i><span class="sr-only">Dog</span></div>
+                        <h3 class="value-card__title" data-i18n="about.values.card1.title">Love for Dogs</h3>
+                        <p class="value-card__description" data-i18n="about.values.card1.description">
+                            Every decision we make has the well-being and happiness of our four-legged friends in mind.
                         </p>
                     </div>
                     
                     <div class="value-card">
-                        <div class="value-card__icon"><i class="fa-solid fa-flask" aria-hidden="true"></i><span class="sr-only">Innovación</span></div>
-                        <h3 class="value-card__title">Innovación</h3>
-                        <p class="value-card__description">
-                            Utilizamos las últimas tecnologías en IA y machine learning para 
-                            ofrecer soluciones únicas en el cuidado canino.
+                        <div class="value-card__icon"><i class="fa-solid fa-flask" aria-hidden="true"></i><span class="sr-only">Innovation</span></div>
+                        <h3 class="value-card__title" data-i18n="about.values.card2.title">Innovation</h3>
+                        <p class="value-card__description" data-i18n="about.values.card2.description">
+                            We use the latest technologies in AI and machine learning to offer unique solutions in dog care.
                         </p>
                     </div>
                     
                     <div class="value-card">
-                        <div class="value-card__icon"><i class="fa-solid fa-handshake" aria-hidden="true"></i><span class="sr-only">Comunidad</span></div>
-                        <h3 class="value-card__title">Comunidad</h3>
-                        <p class="value-card__description">
-                            Creemos en el poder de conectar a los amantes de los perros para 
-                            compartir experiencias y aprender juntos.
+                        <div class="value-card__icon"><i class="fa-solid fa-handshake" aria-hidden="true"></i><span class="sr-only">Community</span></div>
+                        <h3 class="value-card__title" data-i18n="about.values.card3.title">Community</h3>
+                        <p class="value-card__description" data-i18n="about.values.card3.description">
+                            We believe in the power of connecting dog lovers to share experiences and learn together.
                         </p>
                     </div>
                     
                     <div class="value-card">
-                        <div class="value-card__icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i><span class="sr-only">Simplicidad</span></div>
-                        <h3 class="value-card__title">Simplicidad</h3>
-                        <p class="value-card__description">
-                            Hacemos que la tecnología compleja sea simple y accesible para 
-                            todos, sin importar su nivel técnico.
+                        <div class="value-card__icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i><span class="sr-only">Simplicity</span></div>
+                        <h3 class="value-card__title" data-i18n="about.values.card4.title">Simplicity</h3>
+                        <p class="value-card__description" data-i18n="about.values.card4.description">
+                            We make complex technology simple and accessible for everyone, regardless of their technical level.
                         </p>
                     </div>
                 </div>
@@ -131,43 +131,44 @@
         <!-- Team Section -->
         <section class="team-section">
             <div class="container">
-                <h2 class="section-title text-center">Nuestro Equipo</h2>
-                <p class="section-subtitle text-center">
-                    Profesionales apasionados trabajando para hacer la diferencia en la vida de tu perro
+                <h2 class="section-title text-center" data-i18n="about.team.title">Our Team</h2>
+                <p class="section-subtitle text-center" data-i18n="about.team.subtitle">
+                    Passionate professionals working to make a difference in your dog's life
                 </p>
                 <div class="team-grid">
                     <div class="team-member">
-                        <img src="./assets/img/member-1.png" alt="Carlos Mendoza" class="team-member__image" loading="lazy">
+                        <img src="./assets/img/member-1.png" alt="Brayan Ccarita" class="team-member__image" loading="lazy">
                         <h3 class="team-member__name">Brayan Ccarita</h3>
-                        <p class="team-member__role">Ingeniero de Software</p>
-                        <p class="team-member__description">
-                            Estudiante apasionado por la tecnología, la programación además de la automatizacion de procesos con inteligencia artificial.
+                        <p class="team-member__role">Software Engineer</p>
+                        <p class="team-member__description" data-i18n="about.team.member1.description">
+                            A student passionate about technology, programming, and process automation with artificial intelligence.
                         </p>
                     </div>
                     
                     <div class="team-member">
                         <img src="./assets/img/member-2.jpeg" alt="Joseph Chavez" class="team-member__image" loading="lazy">
                         <h3 class="team-member__name">Joseph Chavez</h3>
-                        <p class="team-member__role">Ingeniero de Software</p>
-                        <p class="team-member__description">
-                                Soy un estudiante con fuerte inclinación hacia la innovación tecnológica, el desarrollo de software y la implementación de soluciones automatizadas impulsadas por inteligencia artificial. También encuentro inspiración en la música y en diversas formas de creatividad, lo que complementa mi enfoque multidisciplinario para resolver problemas y aprender continuamente.                        </p>
+                        <p class="team-member__role">Software Engineer</p>
+                        <p class="team-member__description" data-i18n="about.team.member2.description">
+                            I am a student with a strong inclination towards technological innovation, software development, and the implementation of automated solutions driven by artificial intelligence. I also find inspiration in music and various forms of creativity, which complements my multidisciplinary approach to problem-solving and continuous learning.
+                        </p>
                     </div>
                     
                     <div class="team-member">
-                        <img src="./assets/img/member-3.jpeg" alt="Miguel Torres" class="team-member__image" loading="lazy">
+                        <img src="./assets/img/member-3.jpeg" alt="Juan David Saldaña De Souza" class="team-member__image" loading="lazy">
                         <h3 class="team-member__name">Juan David Saldaña De Souza</h3>
-                        <p class="team-member__role">Ingeniero de Software</p>
-                        <p class="team-member__description">
-                                Soy un estudiante de Ingeniería de Software, con una profunda pasión por la innovación tecnológica, la programación y la automatización de procesos mediante la inteligencia artificial. Me considero una persona comprometida y responsable que prioriza sus deberes y se esfuerza por cumplir con los plazos establecidos.
+                        <p class="team-member__role">Software Engineer</p>
+                        <p class="team-member__description" data-i18n="about.team.member3.description">
+                            I am a Software Engineering student with a deep passion for technological innovation, programming, and process automation using artificial intelligence. I consider myself a committed and responsible person who prioritizes duties and strives to meet deadlines.
                         </p>
                     </div>
 
                     <div class="team-member">
                         <img src="./assets/img/member-4.png" alt="Bryan Martinez" class="team-member__image" loading="lazy">
                         <h3 class="team-member__name">Bryan Martinez</h3>
-                        <p class="team-member__role">Ingeniero de Software</p>
-                        <p class="team-member__description">
-                            Soy estudiante de la carrera de ingeniería de software de la universidad Peruana de ciencias aplicadas, soy una persona comprometida y responsable, priorizo mucho mis responsabilidades y siempre trato de cumplir mis trabajos en los tiempos establecidos.
+                        <p class="team-member__role">Software Engineer</p>
+                        <p class="team-member__description" data-i18n="about.team.member4.description">
+                            I am a software engineering student at the Peruvian University of Applied Sciences. I am a committed and responsible person, I prioritize my responsibilities and always try to complete my work within the established deadlines.
                         </p>
                     </div>
 
@@ -175,9 +176,9 @@
 
                         <img src="./assets/img/member-5.png" alt="Leonardo Dueñas" class="team-member__image" loading="lazy">
                         <h3 class="team-member__name">Leonardo Dueñas</h3>
-                        <p class="team-member__role">Ingeniero de Software</p>
-                        <p class="team-member__description">
-                            Estudiante de ingeniería de software, con fuerte tendencia por las ciencias de la computación y ciberseguridad.
+                        <p class="team-member__role">Software Engineer</p>
+                        <p class="team-member__description" data-i18n="about.team.member5.description">
+                            Software engineering student, with a strong inclination towards computer science and cybersecurity.
                         </p>
                     </div>
                 </div>
@@ -193,12 +194,10 @@
             <div class="footer__content">
                 <div class="footer__section footer__section--brand">
                     <div class="footer__logo">
-                        <a href="./index.html" class="logo__link" aria-label="Ir al inicio"><span class="logo__text">Dogimax</span></a>
+                        <a href="./index.html" class="logo__link" aria-label="Go to homepage"><span class="logo__text">Dogimax</span></a>
                     </div>
-                    <p class="footer__description">
-                        La aplicación premium que revoluciona el cuidado de tu perro con 
-                        tecnología de inteligencia artificial y las mejores herramientas 
-                        de gestión.
+                    <p class="footer__description" data-i18n="footer.description">
+                        The premium app that revolutionizes your dog's care with artificial intelligence technology and the best management tools.
                     </p>
                     <div class="footer__social">
                         <a href="#" class="social-link" aria-label="Facebook">
@@ -221,49 +220,49 @@
                 </div>
                 
                 <div class="footer__section">
-                    <h3 class="footer__title">Producto</h3>
+                    <h3 class="footer__title" data-i18n="footer.product.title">Product</h3>
                     <ul class="footer__links">
-                        <li><a href="./index.html#features" class="footer__link">Características</a></li>
-                        <li><a href="#" class="footer__link">Precios</a></li>
-                        <li><a href="#" class="footer__link">Premium</a></li>
-                        <li><a href="#" class="footer__link">App Móvil</a></li>
+                        <li><a href="./index.html#features" class="footer__link" data-i18n="footer.product.features">Features</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.product.pricing">Pricing</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.product.premium">Premium</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.product.mobile">Mobile App</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer__section">
-                    <h3 class="footer__title">Empresa</h3>
+                    <h3 class="footer__title" data-i18n="footer.company.title">Company</h3>
                     <ul class="footer__links">
-                        <li><a href="./about-us.html" class="footer__link">Sobre Nosotros</a></li>
-                        <li><a href="#" class="footer__link">Blog</a></li>
-                        <li><a href="#" class="footer__link">Carrera</a></li>
-                        <li><a href="#" class="footer__link">Prensa</a></li>
+                        <li><a href="./about-us.html" class="footer__link" data-i18n="footer.company.about">About Us</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.company.blog">Blog</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.company.careers">Careers</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.company.press">Press</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer__section">
-                    <h3 class="footer__title">Soporte</h3>
+                    <h3 class="footer__title" data-i18n="footer.support.title">Support</h3>
                     <ul class="footer__links">
-                        <li><a href="./faq.html" class="footer__link">FAQ</a></li>
-                        <li><a href="#" class="footer__link">Contacto</a></li>
-                        <li><a href="#" class="footer__link">Centro de Ayuda</a></li>
-                        <li><a href="#" class="footer__link">Comunidad</a></li>
+                        <li><a href="./faq.html" class="footer__link" data-i18n="footer.support.faq">FAQ</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.support.contact">Contact</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.support.help">Help Center</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.support.community">Community</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer__section">
-                    <h3 class="footer__title">Legal</h3>
+                    <h3 class="footer__title" data-i18n="footer.legal.title">Legal</h3>
                     <ul class="footer__links">
-                        <li><a href="#" class="footer__link">Privacidad</a></li>
-                        <li><a href="#" class="footer__link">Términos</a></li>
-                        <li><a href="#" class="footer__link">Cookies</a></li>
-                        <li><a href="#" class="footer__link">GDPR</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.legal.privacy">Privacy</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.legal.terms">Terms</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.legal.cookies">Cookies</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.legal.gdpr">GDPR</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer__bottom">
-                <p class="footer__copyright">
-                    © 2025 Dogimax. Todos los derechos reservados. Hecho con ❤️ para dog lovers.
+                <p class="footer__copyright" data-i18n="footer.copyright">
+                    © 2025 Dogimax. All rights reserved. Made with ❤️ for dog lovers.
                 </p>
             </div>
         </div>
