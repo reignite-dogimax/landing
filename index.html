@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dogimax - La Aplicación Definitiva para el Cuidado de tu Perro</title>
-    <meta name="description" content="Dogimax es la aplicación premium que necesitas para cuidar a tu perro. Agenda citas veterinarias, horarios de comida y accede a nuestro asistente IA para resolver todas tus dudas sobre el cuidado de tu mascota.">
-    <meta name="keywords" content="cuidado perros, aplicación mascotas, veterinario, agenda citas, horario comida perros, IA mascotas">
+    <title>Dogimax - The Ultimate App for Your Dog's Care</title>
+    <meta name="description" content="Dogimax is the premium app you need to care for your dog. Schedule vet appointments, manage feeding times, and access our AI assistant to answer all your pet care questions.">
+    <meta name="keywords" content="dog care, pet app, veterinarian, schedule appointments, dog feeding schedule, pet AI">
     <meta name="author" content="Dogimax">
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Dogimax - La Aplicación Definitiva para el Cuidado de tu Perro">
-    <meta property="og:description" content="Agenda citas veterinarias, horarios de comida y accede a nuestro asistente IA para el cuidado perfecto de tu mascota.">
+    <meta property="og:title" content="Dogimax - The Ultimate App for Your Dog's Care">
+    <meta property="og:description" content="Schedule vet appointments, manage feeding times, and access our AI assistant for your pet's perfect care.">
     <meta property="og:image" content="./assets/img/dogimax-og-image.jpg">
     <meta property="og:url" content="https://dogimax.com">
     <meta property="og:type" content="website">
@@ -18,8 +18,8 @@
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Dogimax - La Aplicación Definitiva para el Cuidado de tu Perro">
-    <meta name="twitter:description" content="Agenda citas veterinarias, horarios de comida y accede a nuestro asistente IA para el cuidado perfecto de tu mascota.">
+    <meta name="twitter:title" content="Dogimax - The Ultimate App for Your Dog's Care">
+    <meta name="twitter:description" content="Schedule vet appointments, manage feeding times, and access our AI assistant for your pet's perfect care.">
     <meta name="twitter:image" content="./assets/img/dogimax-twitter-card.jpg">
 
     <!-- Font Awesome CDN -->
@@ -31,7 +31,7 @@
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
         "name": "Dogimax",
-        "description": "Aplicación premium para el cuidado integral de perros con funciones de agenda veterinaria, horarios de comida y asistente IA.",
+        "description": "Premium application for comprehensive dog care with features for vet scheduling, feeding times, and an AI assistant.",
         "url": "https://dogimax.com",
         "applicationCategory": "LifestyleApplication",
         "operatingSystem": "Web, iOS, Android",
@@ -68,21 +68,30 @@
         <div class="container">
             <div class="header__content">
                 <div class="header__logo">
-                    <a href="./index.html" class="logo__link" aria-label="Ir al inicio"><span class="logo__text">Dogimax</span></a>
+                    <a href="./index.html" class="logo__link" aria-label="Go to homepage"><span class="logo__text">Dogimax</span></a>
                 </div>
                 
-                <nav class="main-nav" aria-label="Navegación principal">
+                <nav class="main-nav" aria-label="Main navigation">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#benefits" class="nav__link">Beneficios</a></li>
-                        <li class="nav__item"><a href="#features" class="nav__link">Características</a></li>
-                        <li class="nav__item"><a href="#testimonials" class="nav__link">Testimonios</a></li>
-                        <li class="nav__item"><a href="./about-us.html" class="nav__link">Nosotros</a></li>
-                        <li class="nav__item"><a href="./faq.html" class="nav__link">FAQ</a></li>
+                        <li class="nav__item"><a href="#benefits" class="nav__link" data-i18n="nav.benefits">Benefits</a></li>
+                        <li class="nav__item"><a href="#features" class="nav__link" data-i18n="nav.features">Features</a></li>
+                        <li class="nav__item"><a href="#testimonials" class="nav__link" data-i18n="nav.testimonials">Testimonials</a></li>
+                        <li class="nav__item"><a href="./about-us.html" class="nav__link" data-i18n="nav.about">About Us</a></li>
+                        <li class="nav__item"><a href="./faq.html" class="nav__link" data-i18n="nav.faq">FAQ</a></li>
                     </ul>
-                    <a href="#signup" class="cta-primary nav__cta">Comenzar Gratis</a>
+                    <a href="#signup" class="cta-primary nav__cta" data-i18n="nav.cta">Start for Free</a>
+                </nav>
+
+                <div class="lang-switcher">
+                    <label for="lang-toggle" class="sr-only">Language Switcher</label>
+                    <input type="checkbox" id="lang-toggle" class="lang-switcher__toggle">
+                    <div class="lang-switcher__slider">
+                        <span class="lang-switcher__label lang-switcher__label--en">EN</span>
+                        <span class="lang-switcher__label lang-switcher__label--es">ES</span>
+                    </div>
                 </nav>
                 
-                <button class="mobile-menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+                <button class="mobile-menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
@@ -97,23 +106,23 @@
             <div class="container">
                 <div class="hero__content">
                     <div class="hero__text">
-                        <h1 class="hero__title">
-                            La App Que Tu Perro <span class="text-highlight">Necesitaba</span>
+                        <h1 class="hero__title" data-i18n="hero.title">
+                            The App Your Dog <span class="text-highlight" data-i18n="hero.titleHighlight">Needed</span>
                         </h1>
-                        <p class="hero__subtitle">
-                            Dogimax es la aplicación premium que revoluciona el cuidado de tu mascota. 
-                            Agenda citas veterinarias, controla horarios de comida y accede a nuestro 
-                            asistente IA personalizado para resolver todas tus dudas.
+                        <p class="hero__subtitle" data-i18n="hero.subtitle">
+                            Dogimax is the premium app that revolutionizes your pet's care.
+                            Schedule vet appointments, manage feeding times, and access our
+                            personalized AI assistant to answer all your questions.
                         </p>
                         <div class="hero__cta">
-                            <a href="#signup" class="cta-button cta-button--primary">
-                                Empezar Gratis Ahora
+                            <a href="#signup" class="cta-button cta-button--primary" data-i18n="hero.cta">
+                                Start Free Now
                             </a>
                             
                         </div>
                     </div>
                     <div class="hero__image">
-                        <img src="./assets/img/hero-dog-app.jpg" alt="Perro feliz usando la aplicación Dogimax" loading="eager">
+                        <img src="./assets/img/hero-dog-app.jpg" alt="Happy dog using the Dogimax app" loading="eager">
                     </div>
                 </div>
             </div>
@@ -123,9 +132,9 @@
         <section class="benefits-section" id="benefits">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">¿Por Qué Miles de Dog Lovers Eligen Dogimax?</h2>
-                    <p class="section-subtitle">
-                        Descubre todos los beneficios que harán la diferencia en la vida de tu mascota
+                    <h2 class="section-title" data-i18n="benefits.title">Why Do Thousands of Dog Lovers Choose Dogimax?</h2>
+                    <p class="section-subtitle" data-i18n="benefits.subtitle">
+                        Discover all the benefits that will make a difference in your pet's life
                     </p>
                 </div>
                 
@@ -133,79 +142,79 @@
                     <div class="benefit-card">
                         <div class="benefit-card__icon">
                                     <i class="fa-solid fa-stethoscope" aria-hidden="true"></i>
-                                    <span class="sr-only">Salud</span>
+                                    <span class="sr-only">Health</span>
                         </div>
-                        <h3 class="benefit-card__title">Salud Bajo Control</h3>
-                        <p class="benefit-card__description">
-                            Nunca más olvides una cita veterinaria. Recibe recordatorios inteligentes 
-                            y mantén el historial médico completo de tu perro.
+                        <h3 class="benefit-card__title" data-i18n="benefits.card1.title">Health Under Control</h3>
+                        <p class="benefit-card__description" data-i18n="benefits.card1.description">
+                            Never forget a vet appointment again. Receive smart reminders
+                            and keep your dog's complete medical history.
                         </p>
                     </div>
                     
                     <div class="benefit-card">
                         <div class="benefit-card__icon">
                                     <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
-                                    <span class="sr-only">Horarios</span>
+                                    <span class="sr-only">Schedules</span>
                         </div>
-                        <h3 class="benefit-card__title">Horarios Perfectos</h3>
-                        <p class="benefit-card__description">
-                            Establece rutinas de alimentación personalizadas y recibe notificaciones 
-                            para mantener a tu perro feliz y saludable.
+                        <h3 class="benefit-card__title" data-i18n="benefits.card2.title">Perfect Schedules</h3>
+                        <p class="benefit-card__description" data-i18n="benefits.card2.description">
+                            Set up personalized feeding routines and receive notifications
+                            to keep your dog happy and healthy.
                         </p>
                     </div>
                     
                     <div class="benefit-card">
                         <div class="benefit-card__icon">
                                     <i class="fa-solid fa-robot" aria-hidden="true"></i>
-                                    <span class="sr-only">Asistente IA</span>
+                                    <span class="sr-only">AI Assistant</span>
                         </div>
-                        <h3 class="benefit-card__title">Asistente IA Personal</h3>
-                        <p class="benefit-card__description">
-                            Accede a nuestro experto virtual que conoce a tu perro y responde 
-                            todas tus preguntas las 24 horas del día.
+                        <h3 class="benefit-card__title" data-i18n="benefits.card3.title">Personal AI Assistant</h3>
+                        <p class="benefit-card__description" data-i18n="benefits.card3.description">
+                            Access our virtual expert who knows your dog and answers
+                            all your questions 24 hours a day.
                         </p>
                     </div>
                     
                     <div class="benefit-card">
                         <div class="benefit-card__icon">
                                     <i class="fa-solid fa-users" aria-hidden="true"></i>
-                                    <span class="sr-only">Comunidad</span>
+                                    <span class="sr-only">Community</span>
                         </div>
-                        <h3 class="benefit-card__title">Comunidad Activa</h3>
-                        <p class="benefit-card__description">
-                            Conecta con otros amantes de los perros, comparte experiencias 
-                            y obtén consejos de expertos veterinarios.
+                        <h3 class="benefit-card__title" data-i18n="benefits.card4.title">Active Community</h3>
+                        <p class="benefit-card__description" data-i18n="benefits.card4.description">
+                            Connect with other dog lovers, share experiences,
+                            and get advice from veterinary experts.
                         </p>
                     </div>
                     
                     <div class="benefit-card">
                         <div class="benefit-card__icon">
                                     <i class="fa-solid fa-syringe" aria-hidden="true"></i>
-                                    <span class="sr-only">Registro de Vacunas</span>
+                                    <span class="sr-only">Vaccine Records</span>
                         </div>
-                        <h3 class="benefit-card__title">Registro de Vacunas</h3>
-                        <p class="benefit-card__description">
-                            Lleva un control claro y accesible del esquema de vacunación de tu mascota,
-                            con alertas y certificados digitales para consultas y viajes.
+                        <h3 class="benefit-card__title" data-i18n="benefits.card5.title">Vaccine Records</h3>
+                        <p class="benefit-card__description" data-i18n="benefits.card5.description">
+                            Keep a clear and accessible record of your pet's vaccination schedule,
+                            with alerts and digital certificates for appointments and travel.
                         </p>
                     </div>
 
                     <div class="benefit-card">
                         <div class="benefit-card__icon">
                                     <i class="fa-solid fa-pills" aria-hidden="true"></i>
-                                    <span class="sr-only">Recordatorios de Medicación</span>
+                                    <span class="sr-only">Medication Reminders</span>
                         </div>
-                        <h3 class="benefit-card__title">Recordatorios de Medicación</h3>
-                        <p class="benefit-card__description">
-                            Programa dosis y horarios, recibe notificaciones y evita olvidos en tratamientos
-                            críticos para la salud de tu perro.
+                        <h3 class="benefit-card__title" data-i18n="benefits.card6.title">Medication Reminders</h3>
+                        <p class="benefit-card__description" data-i18n="benefits.card6.description">
+                            Schedule doses and times, receive notifications, and avoid missing
+                            critical treatments for your dog's health.
                         </p>
                     </div>
                 </div>
                 
                 <div class="section-cta">
-                    <a href="#signup" class="cta-button cta-button--secondary">
-                        Únete a la Comunidad
+                    <a href="#signup" class="cta-button cta-button--secondary" data-i18n="benefits.cta">
+                        Join the Community
                     </a>
                 </div>
             </div>
@@ -215,50 +224,50 @@
         <section class="features-section" id="features">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Características Que Marcan la Diferencia</h2>
-                    <p class="section-subtitle">
-                        Tecnología avanzada diseñada específicamente para el cuidado canino
+                    <h2 class="section-title" data-i18n="features.title">Features That Make a Difference</h2>
+                    <p class="section-subtitle" data-i18n="features.subtitle">
+                        Advanced technology designed specifically for canine care
                     </p>
                 </div>
                 
                 <div class="features-list">
                     <div class="feature-item">
                         <div class="feature-item__content">
-                            <h3 class="feature-item__title">Agenda Veterinaria Inteligente</h3>
-                            <p class="feature-item__description">
-                                Sistema avanzado de recordatorios que se sincroniza con tu calendario 
-                                y el de tu veterinario. Incluye historial médico completo, vacunas, 
-                                medicamentos y seguimiento de tratamientos.
+                            <h3 class="feature-item__title" data-i18n="features.item1.title">Smart Vet Scheduler</h3>
+                            <p class="feature-item__description" data-i18n="features.item1.description">
+                                An advanced reminder system that syncs with your calendar
+                                and your vet's. Includes complete medical history, vaccinations,
+                                medications, and treatment tracking.
                             </p>
                             <ul class="feature-item__list">
-                                <li>Recordatorios automáticos de citas</li>
-                                <li>Historial médico digitalizado</li>
-                                <li>Conexión directa con veterinarios</li>
-                                <li>Seguimiento de tratamientos</li>
+                                <li data-i18n="features.item1.bullet1">Automatic appointment reminders</li>
+                                <li data-i18n="features.item1.bullet2">Digitalized medical history</li>
+                                <li data-i18n="features.item1.bullet3">Direct connection with veterinarians</li>
+                                <li data-i18n="features.item1.bullet4">Treatment tracking</li>
                             </ul>
                         </div>
                         <div class="feature-item__image">
-                            <img src="./assets/img/feature-calendar.png" alt="Calendario veterinario en la app Dogimax" loading="lazy">
+                            <img src="./assets/img/feature-calendar.png" alt="Veterinary calendar in the Dogimax app" loading="lazy">
                         </div>
                     </div>
                     
                     <div class="feature-item feature-item--reverse">
                         <div class="feature-item__content">
-                            <h3 class="feature-item__title">Asistente IA Personalizado</h3>
-                            <p class="feature-item__description">
-                                Nuestro asistente de inteligencia artificial aprende sobre tu perro 
-                                y proporciona consejos personalizados basados en raza, edad, 
-                                historial médico y comportamiento.
+                            <h3 class="feature-item__title" data-i18n="features.item2.title">Personalized AI Assistant</h3>
+                            <p class="feature-item__description" data-i18n="features.item2.description">
+                                Our artificial intelligence assistant learns about your dog
+                                and provides personalized advice based on breed, age,
+                                medical history, and behavior.
                             </p>
                             <ul class="feature-item__list">
-                                <li>Respuestas 24/7 sobre tu mascota</li>
-                                <li>Consejos personalizados por raza</li>
-                                <li>Alertas de salud preventivas</li>
-                                <li>Recomendaciones de cuidado</li>
+                                <li data-i18n="features.item2.bullet1">24/7 answers about your pet</li>
+                                <li data-i18n="features.item2.bullet2">Personalized advice by breed</li>
+                                <li data-i18n="features.item2.bullet3">Preventive health alerts</li>
+                                <li data-i18n="features.item2.bullet4">Care recommendations</li>
                             </ul>
                         </div>
                         <div class="feature-item__image">
-                            <img src="./assets/img/feature-ai-chat.png" alt="Chat con asistente IA en Dogimax" loading="lazy">
+                            <img src="./assets/img/feature-ai-chat.png" alt="Chat with AI assistant in Dogimax" loading="lazy">
                         </div>
                     </div>
                     
@@ -266,8 +275,8 @@
                 </div>
                 
                 <div class="section-cta">
-                    <a href="#signup" class="cta-button cta-button--primary">
-                        Explorar Todas las Características
+                    <a href="#signup" class="cta-button cta-button--primary" data-i18n="features.cta">
+                        Explore All Features
                     </a>
                 </div>
             </div>
@@ -277,9 +286,9 @@
         <section class="social-proof-section" id="testimonials">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Confiado por Miles de Dog Lovers</h2>
-                    <p class="section-subtitle">
-                        Descubre por qué somos la aplicación #1 para el cuidado canino
+                    <h2 class="section-title" data-i18n="testimonials.title">Trusted by Thousands of Dog Lovers</h2>
+                    <p class="section-subtitle" data-i18n="testimonials.subtitle">
+                        Find out why we are the #1 app for canine care
                     </p>
                 </div>
                 
@@ -292,16 +301,16 @@
                             <span class="star">★</span>
                             <span class="star">★</span>
                         </div>
-                        <p class="testimonial-card__text">
-                            "Dogimax cambió completamente cómo cuido a Max. El asistente IA me ayudó 
-                            cuando estaba preocupada por su comportamiento y resultó ser solo una 
-                            fase normal. ¡Increíble!"
+                        <p class="testimonial-card__text" data-i18n="testimonials.card1.text">
+                            "Dogimax completely changed how I care for Max. The AI assistant helped me
+                            when I was worried about his behavior, and it turned out to be just a
+                            normal phase. Incredible!"
                         </p>
                         <div class="testimonial-card__author">
-                            <img src="./assets/img/testimonial-1.jpg" alt="María González" class="author__image" loading="lazy">
+                            <img src="./assets/img/testimonial-1.jpg" alt="Maria Gonzalez" class="author__image" loading="lazy">
                             <div class="author__info">
-                                <h4 class="author__name">María González</h4>
-                                <p class="author__location">Madrid, España</p>
+                                <h4 class="author__name" data-i18n="testimonials.card1.author">Maria Gonzalez</h4>
+                                <p class="author__location" data-i18n="testimonials.card1.location">Madrid, Spain</p>
                             </div>
                         </div>
                     </div>
@@ -314,16 +323,16 @@
                             <span class="star">★</span>
                             <span class="star">★</span>
                         </div>
-                        <p class="testimonial-card__text">
-                            "Como veterinario, recomiendo Dogimax a todos mis clientes. La 
-                            información que llegan con a la consulta es mucho más detallada 
-                            y útil para el diagnóstico."
+                        <p class="testimonial-card__text" data-i18n="testimonials.card2.text">
+                            "As a veterinarian, I recommend Dogimax to all my clients. The
+                            information they bring to the consultation is much more detailed
+                            and useful for diagnosis."
                         </p>
                         <div class="testimonial-card__author">
                             <img src="./assets/img/testimonial-2.jpg" alt="Dr. Carlos Ruiz" class="author__image" loading="lazy">
                             <div class="author__info">
-                                <h4 class="author__name">Dr. Carlos Ruiz</h4>
-                                <p class="author__location">Veterinario, Barcelona</p>
+                                <h4 class="author__name" data-i18n="testimonials.card2.author">Dr. Carlos Ruiz</h4>
+                                <p class="author__location" data-i18n="testimonials.card2.location">Veterinarian, Barcelona</p>
                             </div>
                         </div>
                     </div>
@@ -336,16 +345,16 @@
                             <span class="star">★</span>
                             <span class="star">★</span>
                         </div>
-                        <p class="testimonial-card__text">
-                            "Los recordatorios de comida han sido un salvavidas. Luna ahora 
-                            tiene una rutina perfecta y su digestión ha mejorado muchísimo. 
-                            La versión premium vale cada euro."
+                        <p class="testimonial-card__text" data-i18n="testimonials.card3.text">
+                            "The meal reminders have been a lifesaver. Luna now
+                            has a perfect routine and her digestion has improved so much.
+                            The premium version is worth every penny."
                         </p>
                         <div class="testimonial-card__author">
-                            <img src="./assets/img/testimonial-3.jpg" alt="Ana Martín" class="author__image" loading="lazy">
+                            <img src="./assets/img/testimonial-3.jpg" alt="Ana Martin" class="author__image" loading="lazy">
                             <div class="author__info">
-                                <h4 class="author__name">Ana Martín</h4>
-                                <p class="author__location">Valencia, España</p>
+                                <h4 class="author__name" data-i18n="testimonials.card3.author">Ana Martin</h4>
+                                <p class="author__location" data-i18n="testimonials.card3.location">Valencia, Spain</p>
                             </div>
                         </div>
                     </div>
@@ -354,25 +363,25 @@
                 <div class="stats-grid">
                     <div class="stat-item">
                         <h3 class="stat-item__number">50K+</h3>
-                        <p class="stat-item__label">Perros Felices</p>
+                        <p class="stat-item__label" data-i18n="stats.item1">Happy Dogs</p>
                     </div>
                     <div class="stat-item">
                         <h3 class="stat-item__number">98%</h3>
-                        <p class="stat-item__label">Satisfacción</p>
+                        <p class="stat-item__label" data-i18n="stats.item2">Satisfaction</p>
                     </div>
                     <div class="stat-item">
                         <h3 class="stat-item__number">4.9★</h3>
-                        <p class="stat-item__label">Valoración</p>
+                        <p class="stat-item__label" data-i18n="stats.item3">Rating</p>
                     </div>
                     <div class="stat-item">
                         <h3 class="stat-item__number">24/7</h3>
-                        <p class="stat-item__label">Soporte IA</p>
+                        <p class="stat-item__label" data-i18n="stats.item4">AI Support</p>
                     </div>
                 </div>
                 
                 <div class="section-cta">
-                    <a href="#signup" class="cta-button cta-button--secondary">
-                        Únete a Nuestra Comunidad
+                    <a href="#signup" class="cta-button cta-button--secondary" data-i18n="testimonials.cta">
+                        Join Our Community
                     </a>
                 </div>
             </div>
@@ -387,12 +396,12 @@
             <div class="footer__content">
                 <div class="footer__section footer__section--brand">
                     <div class="footer__logo">
-                            <a href="./index.html" class="logo__link" aria-label="Ir al inicio"><span class="logo__text">Dogimax</span></a>
+                            <a href="./index.html" class="logo__link" aria-label="Go to homepage"><span class="logo__text">Dogimax</span></a>
                         </div>
-                    <p class="footer__description">
-                        La aplicación premium que revoluciona el cuidado de tu perro con 
-                        tecnología de inteligencia artificial y las mejores herramientas 
-                        de gestión.
+                    <p class="footer__description" data-i18n="footer.description">
+                        The premium app that revolutionizes your dog's care with
+                        artificial intelligence technology and the best management
+                        tools.
                     </p>
                     <div class="footer__social">
                         <a href="#" class="social-link" aria-label="Facebook">
@@ -415,49 +424,49 @@
                 </div>
                 
                 <div class="footer__section">
-                    <h3 class="footer__title">Producto</h3>
+                    <h3 class="footer__title" data-i18n="footer.product.title">Product</h3>
                     <ul class="footer__links">
-                        <li><a href="#features" class="footer__link">Características</a></li>
-                        <li><a href="#" class="footer__link">Precios</a></li>
-                        <li><a href="#" class="footer__link">Premium</a></li>
-                        <li><a href="#" class="footer__link">App Móvil</a></li>
+                        <li><a href="#features" class="footer__link" data-i18n="footer.product.features">Features</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.product.pricing">Pricing</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.product.premium">Premium</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.product.mobile">Mobile App</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer__section">
-                    <h3 class="footer__title">Empresa</h3>
+                    <h3 class="footer__title" data-i18n="footer.company.title">Company</h3>
                     <ul class="footer__links">
-                        <li><a href="./about-us.html" class="footer__link">Sobre Nosotros</a></li>
-                        <li><a href="#" class="footer__link">Blog</a></li>
-                        <li><a href="#" class="footer__link">Carrera</a></li>
-                        <li><a href="#" class="footer__link">Prensa</a></li>
+                        <li><a href="./about-us.html" class="footer__link" data-i18n="footer.company.about">About Us</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.company.blog">Blog</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.company.careers">Careers</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.company.press">Press</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer__section">
-                    <h3 class="footer__title">Soporte</h3>
+                    <h3 class="footer__title" data-i18n="footer.support.title">Support</h3>
                     <ul class="footer__links">
-                        <li><a href="./faq.html" class="footer__link">FAQ</a></li>
-                        <li><a href="#" class="footer__link">Contacto</a></li>
-                        <li><a href="#" class="footer__link">Centro de Ayuda</a></li>
-                        <li><a href="#" class="footer__link">Comunidad</a></li>
+                        <li><a href="./faq.html" class="footer__link" data-i18n="footer.support.faq">FAQ</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.support.contact">Contact</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.support.help">Help Center</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.support.community">Community</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer__section">
-                    <h3 class="footer__title">Legal</h3>
+                    <h3 class="footer__title" data-i18n="footer.legal.title">Legal</h3>
                     <ul class="footer__links">
-                        <li><a href="#" class="footer__link">Privacidad</a></li>
-                        <li><a href="#" class="footer__link">Términos</a></li>
-                        <li><a href="#" class="footer__link">Cookies</a></li>
-                        <li><a href="#" class="footer__link">GDPR</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.legal.privacy">Privacy</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.legal.terms">Terms</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.legal.cookies">Cookies</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="footer.legal.gdpr">GDPR</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer__bottom">
-                <p class="footer__copyright">
-                    © 2025 Dogimax. Todos los derechos reservados. Hecho con ❤️ para dog lovers.
+                <p class="footer__copyright" data-i18n="footer.copyright">
+                    © 2025 Dogimax. All rights reserved. Made with ❤️ for dog lovers.
                 </p>
             </div>
         </div>
